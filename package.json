@@ -1,0 +1,41 @@
+{
+  "name": "qsem",
+  "version": "0.0.0",
+  "description": "Semaphore using native promises",
+  "main": "qsem.js",
+  "scripts": {
+    "test": "happiness && jest --verbose",
+    "watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jue89/node-qsem.git"
+  },
+  "keywords": [
+    "sempahore",
+    "promises"
+  ],
+  "author": "Jue <me@jue.yt>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jue89/node-qsem/issues"
+  },
+  "homepage": "https://github.com/jue89/node-qsem#readme",
+  "devDependencies": {
+    "happiness": "^10.0.2",
+    "jest": "^22.4.3"
+  },
+  "happiness": {
+    "globals": [
+      "jest",
+      "describe",
+      "test",
+      "expect",
+      "beforeEach"
+    ]
+  },
+  "jest": {
+    "automock": false,
+    "clearMocks": true
+  }
+}
