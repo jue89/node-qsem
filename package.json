@@ -1,6 +1,6 @@
 {
   "name": "qsem",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Semaphore using native promises",
   "main": "qsem.js",
   "scripts": {
