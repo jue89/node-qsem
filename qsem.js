@@ -26,4 +26,11 @@ Semaphore.prototype.leave = function () {
 	this._handleStack();
 };
 
+Semaphore.prototype.limit = function (q) {
+	return this.enter()
+		.then(() => q())
+		.then((ret) => { this.leave(); return ret; })
+		.catch((err) => { this.leave(); throw err; });
+};
+
 module.exports = (capacity) => new Semaphore(capacity);
